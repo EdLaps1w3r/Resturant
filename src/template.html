@@ -5,12 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+<style>
+#title {
+    font-weight: 900;
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    align-items: center;
+    padding: 2vh;
+    margin: -1vh;
+}
+#button-container {
+    display: flex;
+    align-content: space-between;
+    gap: 3vw;
+}
+#content {
+    margin: 2vh;
+}
+button {
+    background-color: chocolate;
+    border-radius: 3rem;
+    height: 4vh;
+    width: 5vw;
+}
+</style>
 <body>
     <header>
         <nav>
-            <button>Home</button>
-            <button>Menu</button>
-            <button>about</button>
+            <h1 id="title">Example Resturant</h1>
+            <div id="button-container">
+                <button id="home">Home</button>
+                <button id="menu">Menu</button>
+                <button id="about">About</button>
+            </div>
         </nav>
     </header>
     <div id="content">

@@ -1,0 +1,22 @@
+#title {
+    font-weight: 900;
+    font-size: 3em;
+    font-family: sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    align-items: center;
+    padding: 2vh;
+    margin: -1vh;
+}
+#button-container {
+    display: flex;
+    align-content: space-between;
+    gap: 3vw;
+}
+#content {
+    margin: 2vh;
+}
