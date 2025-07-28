@@ -22,3 +22,4 @@ const restaurantPageHandler = (() => {
     
     homePageLoad();
 })();
+
