@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script defer src="main.js"></script></head>
+<style>
+#title {
+    font-weight: 900;
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+    align-items: center;
+    padding: 2vh;
+    margin: -1vh;
+}
+#button-container {
+    display: flex;
+    align-content: space-between;
+    gap: 3vw;
+}
+#content {
+    margin: 2vh;
+}
+button {
+    background-color: chocolate;
+    border: none;
+    border-radius: 3rem;
+    height: 4vh;
+    width: 5vw;
+}
+
+button:focus {
+    background-color: rgb(94, 48, 15);
+}
+
+body {
+    background-color: rgb(231, 208, 179);
+
+}
+
+.menupage-container {
+    padding:  5vh 20vw;
+    justify-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "title title" 
+        "starters mains"
+        "dessert dessert";
+}
+.title {
+    padding: 5vh 5vw;
+    grid-area: title;
+    font-weight: 900;
+    font-size: 5rem;
+}
+
+#starters {
+    grid-area: starters;
+}
+
+#mains {
+    grid-area: mains;
+}
+
+#desserts {
+    justify-items: center;
+    grid-area: dessert;
+}
+
+.aboutpage-container {
+    padding: 5vh 10vw;
+    justify-items: center;
+}
+
+.homepage-container {
+    padding: 5vh 10vw;
+    justify-items: center;
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <h1 id="title">Example Resturant</h1>
+            <div id="button-container">
+                <button id="home">Home</button>
+                <button id="menu">Menu</button>
+                <button id="about">About</button>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+
+    </div>
+</body>
+</html>
